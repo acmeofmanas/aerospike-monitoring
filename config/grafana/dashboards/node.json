@@ -391,7 +391,7 @@
       "pluginVersion": "7.2.2",
       "targets": [
         {
-          "expr": "sum(aerospike_namespace_memory_size{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\"})",
+          "expr": "sum(aerospike_namespace_memory_size{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\", ns=\"$namespace\"})",
           "format": "time_series",
           "instant": true,
           "interval": "",
@@ -400,7 +400,7 @@
           "refId": "A"
         },
         {
-          "expr": "sum(aerospike_namespace_memory_used_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\"})",
+          "expr": "sum(aerospike_namespace_memory_used_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\", ns=\"$namespace\"})",
           "format": "time_series",
           "instant": true,
           "interval": "",
@@ -409,7 +409,7 @@
           "refId": "B"
         },
         {
-          "expr": "sum(aerospike_namespace_device_total_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\"})",
+          "expr": "sum(aerospike_namespace_device_total_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\", ns=\"$namespace\"})",
           "format": "time_series",
           "instant": true,
           "interval": "",
@@ -418,7 +418,7 @@
           "refId": "C"
         },
         {
-          "expr": "sum(aerospike_namespace_device_used_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\"})",
+          "expr": "sum(aerospike_namespace_device_used_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\", ns=\"$namespace\"})",
           "format": "time_series",
           "instant": true,
           "interval": "",
@@ -427,7 +427,7 @@
           "refId": "D"
         },
         {
-          "expr": "sum(aerospike_namespace_pmem_total_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\"})",
+          "expr": "sum(aerospike_namespace_pmem_total_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\", ns=\"$namespace\"})",
           "format": "time_series",
           "instant": true,
           "interval": "",
@@ -436,7 +436,7 @@
           "refId": "E"
         },
         {
-          "expr": "sum(aerospike_namespace_pmem_used_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\"})",
+          "expr": "sum(aerospike_namespace_pmem_used_bytes{job=\"aerospike\", cluster_name=~\"$cluster\", service=~\"$node\", ns=\"$namespace\"})",
           "format": "time_series",
           "instant": true,
           "interval": "",
